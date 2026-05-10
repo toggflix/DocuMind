@@ -1,0 +1,768 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\models\\documentchunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\models\\documentchunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.ui\\views\\personaeditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|solutionrelative:documind.ui\\views\\personaeditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.ui\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|solutionrelative:documind.ui\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.infrastructure\\services\\pdfpigservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|solutionrelative:documind.infrastructure\\services\\pdfpigservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.infrastructure\\services\\websearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|solutionrelative:documind.infrastructure\\services\\websearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.infrastructure\\services\\settingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|solutionrelative:documind.infrastructure\\services\\settingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\enums\\aiprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\enums\\aiprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\interfaces\\ifiledialogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\interfaces\\ifiledialogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\interfaces\\iaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\interfaces\\iaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\interfaces\\ipdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\interfaces\\ipdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\interfaces\\ipromptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\interfaces\\ipromptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\interfaces\\ireportingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\interfaces\\ireportingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\models\\textsegment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\models\\textsegment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.infrastructure\\services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|solutionrelative:documind.infrastructure\\services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.ui\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|solutionrelative:documind.ui\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\interfaces\\iwebsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\interfaces\\iwebsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.ui\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|solutionrelative:documind.ui\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.infrastructure\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|solutionrelative:documind.infrastructure\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.infrastructure\\services\\promptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|solutionrelative:documind.infrastructure\\services\\promptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|solutionrelative:documind.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.ui\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|solutionrelative:documind.ui\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\models\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\models\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.ui\\views\\personaeditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|solutionrelative:documind.ui\\views\\personaeditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.ui\\converters\\roletovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|solutionrelative:documind.ui\\converters\\roletovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.ui\\converters\\inversebooleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|solutionrelative:documind.ui\\converters\\inversebooleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|solutionrelative:documind.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.infrastructure\\services\\semanticsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|solutionrelative:documind.infrastructure\\services\\semanticsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\utilities\\vectormath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\utilities\\vectormath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\utilities\\textchunker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\utilities\\textchunker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\models\\chatsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\models\\chatsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.infrastructure\\services\\reportingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|solutionrelative:documind.infrastructure\\services\\reportingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.infrastructure\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|solutionrelative:documind.infrastructure\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.infrastructure\\services\\ollamaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|solutionrelative:documind.infrastructure\\services\\ollamaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.ui\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|solutionrelative:documind.ui\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.infrastructure\\documind.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|solutionrelative:documind.infrastructure\\documind.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.core\\documind.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E109A32D-8EBF-321E-1A0B-9699C55B20E4}|DocuMind.Core\\DocuMind.Core.csproj|solutionrelative:documind.core\\documind.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ahmet\\AppData\\Local\\Temp\\.vsdbgsrc\\5120c063a06041876ae50252597ae05d92d3d513e70ae68cb04062fef9cdcd66\\DefaultBinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ahmet\\AppData\\Local\\Temp\\.vsdbgsrc\\aad6be2495d0a786b94b3514a5b6903407fe2d6a75ad7e505df6a9d895927867\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.ui\\documind.ui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|solutionrelative:documind.ui\\documind.ui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.infrastructure\\documind.infrastructure.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{292AEA5E-4AA7-D072-43AB-9720C4F7F352}|DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj|solutionrelative:documind.infrastructure\\documind.infrastructure.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|c:\\users\\ahmet\\source\\repos\\documind\\documind.ui\\documind.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{48497DDE-EEB2-6E71-0E8B-3C63AF099B53}|DocuMind.UI\\DocuMind.UI.csproj|solutionrelative:documind.ui\\documind.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ahmet\\AppData\\Local\\Temp\\.vsdbgsrc\\0a341e702ae36ad4b231c7355d8dd9fa299b8f7a52059eae9c77aecb7600931d\\WpfXamlLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 213,
+          "SelectedChildIndex": 36,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "DocuMind.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\DocuMind.Core.csproj",
+              "RelativeDocumentMoniker": "DocuMind.Core\\DocuMind.Core.csproj",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\DocuMind.Core.csproj",
+              "RelativeToolTip": "DocuMind.Core\\DocuMind.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-31T16:49:50.664Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PersonaEditWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Views\\PersonaEditWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DocuMind.UI\\Views\\PersonaEditWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Views\\PersonaEditWindow.xaml.cs",
+              "RelativeToolTip": "DocuMind.UI\\Views\\PersonaEditWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T20:06:03.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PersonaEditWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Views\\PersonaEditWindow.xaml",
+              "RelativeDocumentMoniker": "DocuMind.UI\\Views\\PersonaEditWindow.xaml",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Views\\PersonaEditWindow.xaml",
+              "RelativeToolTip": "DocuMind.UI\\Views\\PersonaEditWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-02T20:04:59.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DocumentChunk.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\DocumentChunk.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Models\\DocumentChunk.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\DocumentChunk.cs*",
+              "RelativeToolTip": "DocuMind.Core\\Models\\DocumentChunk.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T19:28:00.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Models\\Message.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\Message.cs",
+              "RelativeToolTip": "DocuMind.Core\\Models\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T15:55:39.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Session.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\Session.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Models\\Session.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\Session.cs",
+              "RelativeToolTip": "DocuMind.Core\\Models\\Session.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T15:55:20.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "DefaultBinder.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\AppData\\Local\\Temp\\.vsdbgsrc\\5120c063a06041876ae50252597ae05d92d3d513e70ae68cb04062fef9cdcd66\\DefaultBinder.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5120c063a06041876ae50252597ae05d92d3d513e70ae68cb04062fef9cdcd66\\DefaultBinder.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\AppData\\Local\\Temp\\.vsdbgsrc\\5120c063a06041876ae50252597ae05d92d3d513e70ae68cb04062fef9cdcd66\\DefaultBinder.cs[Salt Okunur]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5120c063a06041876ae50252597ae05d92d3d513e70ae68cb04062fef9cdcd66\\DefaultBinder.cs[Salt Okunur]",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAlwFEAAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T13:44:34.73Z",
+              "EditorCaption": "[Salt Okunur]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WebSearchService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\WebSearchService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Infrastructure\\Services\\WebSearchService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\WebSearchService.cs",
+              "RelativeToolTip": "DocuMind.Infrastructure\\Services\\WebSearchService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T13:12:11.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IWebSearchService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Interfaces\\IWebSearchService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Interfaces\\IWebSearchService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Interfaces\\IWebSearchService.cs",
+              "RelativeToolTip": "DocuMind.Core\\Interfaces\\IWebSearchService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T13:11:47.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ReportingService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\ReportingService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Infrastructure\\Services\\ReportingService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\ReportingService.cs",
+              "RelativeToolTip": "DocuMind.Infrastructure\\Services\\ReportingService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T13:10:05.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IReportingService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Interfaces\\IReportingService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Interfaces\\IReportingService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Interfaces\\IReportingService.cs",
+              "RelativeToolTip": "DocuMind.Core\\Interfaces\\IReportingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T13:09:49.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PromptService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\PromptService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Infrastructure\\Services\\PromptService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\PromptService.cs",
+              "RelativeToolTip": "DocuMind.Infrastructure\\Services\\PromptService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAACsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T13:09:17.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IPromptService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Interfaces\\IPromptService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Interfaces\\IPromptService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Interfaces\\IPromptService.cs",
+              "RelativeToolTip": "DocuMind.Core\\Interfaces\\IPromptService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T13:08:54.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\Persona.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Models\\Persona.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\Persona.cs",
+              "RelativeToolTip": "DocuMind.Core\\Models\\Persona.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T13:07:59.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "InverseBooleanToVisibilityConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Converters\\InverseBooleanToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "DocuMind.UI\\Converters\\InverseBooleanToVisibilityConverter.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Converters\\InverseBooleanToVisibilityConverter.cs",
+              "RelativeToolTip": "DocuMind.UI\\Converters\\InverseBooleanToVisibilityConverter.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T20:28:17.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Infrastructure\\Services\\DatabaseService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\DatabaseService.cs",
+              "RelativeToolTip": "DocuMind.Infrastructure\\Services\\DatabaseService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAuwCMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T20:02:40.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DocuMind.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "DocuMind.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T20:02:10.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ChatSession.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\ChatSession.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Models\\ChatSession.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\ChatSession.cs",
+              "RelativeToolTip": "DocuMind.Core\\Models\\ChatSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T20:00:38.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SemanticSearchService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\SemanticSearchService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Infrastructure\\Services\\SemanticSearchService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\SemanticSearchService.cs",
+              "RelativeToolTip": "DocuMind.Infrastructure\\Services\\SemanticSearchService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:57:28.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TextSegment.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\TextSegment.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Models\\TextSegment.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\TextSegment.cs",
+              "RelativeToolTip": "DocuMind.Core\\Models\\TextSegment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:56:05.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "VectorMath.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Utilities\\VectorMath.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Utilities\\VectorMath.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Utilities\\VectorMath.cs",
+              "RelativeToolTip": "DocuMind.Core\\Utilities\\VectorMath.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAIwCYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:55:52.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "DocuMind.UI",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\DocuMind.UI.csproj",
+              "RelativeDocumentMoniker": "DocuMind.UI\\DocuMind.UI.csproj",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\DocuMind.UI.csproj",
+              "RelativeToolTip": "DocuMind.UI\\DocuMind.UI.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-01T12:33:00.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DocuMind.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj",
+              "RelativeToolTip": "DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-01T12:19:40.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "DocuMind.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj",
+              "RelativeToolTip": "DocuMind.Infrastructure\\DocuMind.Infrastructure.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-01T12:13:55.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IFileDialogService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Interfaces\\IFileDialogService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Interfaces\\IFileDialogService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Interfaces\\IFileDialogService.cs",
+              "RelativeToolTip": "DocuMind.Core\\Interfaces\\IFileDialogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:09:16.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "WpfXamlLoader.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\AppData\\Local\\Temp\\.vsdbgsrc\\0a341e702ae36ad4b231c7355d8dd9fa299b8f7a52059eae9c77aecb7600931d\\WpfXamlLoader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0a341e702ae36ad4b231c7355d8dd9fa299b8f7a52059eae9c77aecb7600931d\\WpfXamlLoader.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\AppData\\Local\\Temp\\.vsdbgsrc\\0a341e702ae36ad4b231c7355d8dd9fa299b8f7a52059eae9c77aecb7600931d\\WpfXamlLoader.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0a341e702ae36ad4b231c7355d8dd9fa299b8f7a52059eae9c77aecb7600931d\\WpfXamlLoader.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAIBJwHcAAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T11:44:46.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "TextChunker.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Utilities\\TextChunker.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Utilities\\TextChunker.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Utilities\\TextChunker.cs",
+              "RelativeToolTip": "DocuMind.Core\\Utilities\\TextChunker.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAGYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T10:40:10.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "OpenAiService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\OpenAiService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Infrastructure\\Services\\OpenAiService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\OpenAiService.cs",
+              "RelativeToolTip": "DocuMind.Infrastructure\\Services\\OpenAiService.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAQwEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T10:18:44.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SettingsService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\SettingsService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Infrastructure\\Services\\SettingsService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\SettingsService.cs",
+              "RelativeToolTip": "DocuMind.Infrastructure\\Services\\SettingsService.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAwHsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T10:18:12.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\AppData\\Local\\Temp\\.vsdbgsrc\\aad6be2495d0a786b94b3514a5b6903407fe2d6a75ad7e505df6a9d895927867\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\aad6be2495d0a786b94b3514a5b6903407fe2d6a75ad7e505df6a9d895927867\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\AppData\\Local\\Temp\\.vsdbgsrc\\aad6be2495d0a786b94b3514a5b6903407fe2d6a75ad7e505df6a9d895927867\\XamlReader.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\aad6be2495d0a786b94b3514a5b6903407fe2d6a75ad7e505df6a9d895927867\\XamlReader.cs",
+              "ViewState": "AgIAANkBAAAAAAAAAAAlwLUBAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T17:44:11.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "DocuMind.UI\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "DocuMind.UI\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAADsBAAAAAAAAAAAAAE0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T17:27:01.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\ChatMessage.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Models\\ChatMessage.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\ChatMessage.cs",
+              "RelativeToolTip": "DocuMind.Core\\Models\\ChatMessage.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA8wA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T17:00:08.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "DocuMind.UI\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\AssemblyInfo.cs",
+              "RelativeToolTip": "DocuMind.UI\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T16:57:24.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GeminiService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\GeminiService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Infrastructure\\Services\\GeminiService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\GeminiService.cs",
+              "RelativeToolTip": "DocuMind.Infrastructure\\Services\\GeminiService.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAwwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T16:52:40.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "OllamaService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\OllamaService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Infrastructure\\Services\\OllamaService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\OllamaService.cs",
+              "RelativeToolTip": "DocuMind.Infrastructure\\Services\\OllamaService.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAQwGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T16:52:40.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PdfPigService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\PdfPigService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Infrastructure\\Services\\PdfPigService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\PdfPigService.cs",
+              "RelativeToolTip": "DocuMind.Infrastructure\\Services\\PdfPigService.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAQwAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T16:52:39.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AiProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Enums\\AiProvider.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Enums\\AiProvider.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Enums\\AiProvider.cs",
+              "RelativeToolTip": "DocuMind.Core\\Enums\\AiProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T16:51:17.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAiService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Interfaces\\IAiService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Interfaces\\IAiService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Interfaces\\IAiService.cs",
+              "RelativeToolTip": "DocuMind.Core\\Interfaces\\IAiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T16:50:49.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IPdfService.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Interfaces\\IPdfService.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Interfaces\\IPdfService.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Interfaces\\IPdfService.cs",
+              "RelativeToolTip": "DocuMind.Core\\Interfaces\\IPdfService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T16:50:23.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RoleToVisibilityConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Converters\\RoleToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "DocuMind.UI\\Converters\\RoleToVisibilityConverter.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Converters\\RoleToVisibilityConverter.cs",
+              "RelativeToolTip": "DocuMind.UI\\Converters\\RoleToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T16:39:39.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\App.xaml",
+              "RelativeDocumentMoniker": "DocuMind.UI\\App.xaml",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\App.xaml",
+              "RelativeToolTip": "DocuMind.UI\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-31T16:38:07.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "DocuMind.UI.csproj",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\DocuMind.UI.csproj",
+              "RelativeDocumentMoniker": "DocuMind.UI\\DocuMind.UI.csproj",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\DocuMind.UI.csproj",
+              "RelativeToolTip": "DocuMind.UI\\DocuMind.UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-31T16:34:26.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\App.xaml.cs",
+              "RelativeDocumentMoniker": "DocuMind.UI\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\App.xaml.cs",
+              "RelativeToolTip": "DocuMind.UI\\App.xaml.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEwAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T16:27:47.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "DocuMind.UI\\Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "DocuMind.UI\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-31T15:52:08.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DocuMind.UI\\Views\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "DocuMind.UI\\Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T15:52:08.015Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

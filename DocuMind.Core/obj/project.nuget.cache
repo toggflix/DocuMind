@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0iUkg/rVPc4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\DocuMind.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ahmet\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

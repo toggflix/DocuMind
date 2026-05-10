@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DocuMind.Core/DocuMind.Core.csproj" />
+  <Project Path="DocuMind.Infrastructure/DocuMind.Infrastructure.csproj" />
+  <Project Path="DocuMind.UI/DocuMind.UI.csproj" />
+</Solution>

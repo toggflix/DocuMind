@@ -1,0 +1,164 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DocuMind.Infrastructure/1.0.0": {
+        "dependencies": {
+          "DocuMind.Core": "1.0.0",
+          "Newtonsoft.Json": "13.0.5-beta1",
+          "PdfPig": "0.1.14-alpha-20251224-7c4f5",
+          "RestSharp": "113.0.1-alpha.0.3",
+          "Serilog": "4.3.1-dev-02395",
+          "Serilog.Sinks.File": "8.0.0-dev-02318"
+        },
+        "runtime": {
+          "DocuMind.Infrastructure.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "assemblyVersion": "8.4.0.0",
+            "fileVersion": "8.4.0.1"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.5-beta1": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.5.31230"
+          }
+        }
+      },
+      "PdfPig/0.1.14-alpha-20251224-7c4f5": {
+        "runtime": {
+          "lib/net8.0/UglyToad.PdfPig.Core.dll": {
+            "assemblyVersion": "0.1.14.0",
+            "fileVersion": "0.1.14.0"
+          },
+          "lib/net8.0/UglyToad.PdfPig.DocumentLayoutAnalysis.dll": {
+            "assemblyVersion": "0.1.14.0",
+            "fileVersion": "0.1.14.0"
+          },
+          "lib/net8.0/UglyToad.PdfPig.Fonts.dll": {
+            "assemblyVersion": "0.1.14.0",
+            "fileVersion": "0.1.14.0"
+          },
+          "lib/net8.0/UglyToad.PdfPig.Package.dll": {
+            "assemblyVersion": "0.1.14.0",
+            "fileVersion": "0.1.14.0"
+          },
+          "lib/net8.0/UglyToad.PdfPig.Tokenization.dll": {
+            "assemblyVersion": "0.1.14.0",
+            "fileVersion": "0.1.14.0"
+          },
+          "lib/net8.0/UglyToad.PdfPig.Tokens.dll": {
+            "assemblyVersion": "0.1.14.0",
+            "fileVersion": "0.1.14.0"
+          },
+          "lib/net8.0/UglyToad.PdfPig.dll": {
+            "assemblyVersion": "0.1.14.0",
+            "fileVersion": "0.1.14.0"
+          }
+        }
+      },
+      "RestSharp/113.0.1-alpha.0.3": {
+        "runtime": {
+          "lib/net8.0/RestSharp.dll": {
+            "assemblyVersion": "113.0.1.0",
+            "fileVersion": "113.0.1.0"
+          }
+        }
+      },
+      "Serilog/4.3.1-dev-02395": {
+        "runtime": {
+          "lib/net8.0/Serilog.dll": {
+            "assemblyVersion": "4.3.0.0",
+            "fileVersion": "4.3.0.0"
+          }
+        }
+      },
+      "Serilog.Sinks.File/8.0.0-dev-02318": {
+        "dependencies": {
+          "Serilog": "4.3.1-dev-02395"
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.Sinks.File.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
+      "DocuMind.Core/1.0.0": {
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0"
+        },
+        "runtime": {
+          "DocuMind.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DocuMind.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommunityToolkit.Mvvm/8.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tqVU8yc/ADO9oiTRyTnwhFN68hCwvkliMierptWOudIAvWY1mWCh5VFh+guwHJmpMwfg0J0rY+yyd5Oy7ty9Uw==",
+      "path": "communitytoolkit.mvvm/8.4.0",
+      "hashPath": "communitytoolkit.mvvm.8.4.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.5-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cGxikAY78u8CPfIT7mkICvI2ZNL7oDsC+DzgVWxtU5DmNhF2qDcU3YheDitdO9TKIra6Y5rHRD2T7oEexbAbLA==",
+      "path": "newtonsoft.json/13.0.5-beta1",
+      "hashPath": "newtonsoft.json.13.0.5-beta1.nupkg.sha512"
+    },
+    "PdfPig/0.1.14-alpha-20251224-7c4f5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eWr//HMTjdGFyaLZ4UhbZbXzNqE7efPhlNCD4ESp03ylV5Nn5WeLKoLeye0FBKi5J/tTDrlUp+Dkr5eU7hk7Ww==",
+      "path": "pdfpig/0.1.14-alpha-20251224-7c4f5",
+      "hashPath": "pdfpig.0.1.14-alpha-20251224-7c4f5.nupkg.sha512"
+    },
+    "RestSharp/113.0.1-alpha.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1QZD8eIj9ZGLCpaXjjtYBl7Px/UbhBN6SGg/GMwMk0I0oZXSR/oi1EdBOa4ViVdB+SrX3BzHCwcb2fQBTF5Ivg==",
+      "path": "restsharp/113.0.1-alpha.0.3",
+      "hashPath": "restsharp.113.0.1-alpha.0.3.nupkg.sha512"
+    },
+    "Serilog/4.3.1-dev-02395": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mPreTBBKb1zW53sLkk45eLPY5ROe9se2W3KNRCBI7v8nkSFbOR1mhLSSLW2OHL2xl0WGqrYel1dLHzTFXwC/iQ==",
+      "path": "serilog/4.3.1-dev-02395",
+      "hashPath": "serilog.4.3.1-dev-02395.nupkg.sha512"
+    },
+    "Serilog.Sinks.File/8.0.0-dev-02318": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D99fj7/Fl1ukWMedFgbLoy0rrPxieyQDZ8Exsx5CTERmC/3+8Bs3VTKf/QI8EO8B6hg5Rj+r1nb6hYhZ+kwJng==",
+      "path": "serilog.sinks.file/8.0.0-dev-02318",
+      "hashPath": "serilog.sinks.file.8.0.0-dev-02318.nupkg.sha512"
+    },
+    "DocuMind.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

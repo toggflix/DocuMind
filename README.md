@@ -1,4 +1,5 @@
 # DocuMind
+﻿# DocuMind
 
 DocuMind, .NET 8 WPF tabanli bir dokuman analiz ve AI destekli yardimci uygulamasidir. PDF metin cikarma, OCR, semantik arama ve farkli AI saglayicilarina baglanma kabiliyetleri icerir.
 

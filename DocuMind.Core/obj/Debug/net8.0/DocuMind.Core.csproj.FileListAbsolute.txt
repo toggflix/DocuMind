@@ -1,0 +1,12 @@
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\bin\Debug\net8.0\DocuMind.Core.deps.json
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\bin\Debug\net8.0\DocuMind.Core.dll
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\bin\Debug\net8.0\DocuMind.Core.pdb
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\DocuMind.Core.csproj.AssemblyReference.cache
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\DocuMind.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\DocuMind.Core.AssemblyInfoInputs.cache
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\DocuMind.Core.AssemblyInfo.cs
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\DocuMind.Core.csproj.CoreCompileInputs.cache
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\DocuMind.Core.dll
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\refint\DocuMind.Core.dll
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\DocuMind.Core.pdb
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\ref\DocuMind.Core.dll

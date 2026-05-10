@@ -1,0 +1,15 @@
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\bin\Debug\net8.0\DocuMind.Infrastructure.deps.json
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\bin\Debug\net8.0\DocuMind.Infrastructure.dll
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\bin\Debug\net8.0\DocuMind.Infrastructure.pdb
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\bin\Debug\net8.0\DocuMind.Core.dll
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\bin\Debug\net8.0\DocuMind.Core.pdb
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0\DocuMind.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0\DocuMind.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0\DocuMind.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0\DocuMind.Infrastructure.AssemblyInfo.cs
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0\DocuMind.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0\DocuMind.7C136000.Up2Date
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0\DocuMind.Infrastructure.dll
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0\refint\DocuMind.Infrastructure.dll
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0\DocuMind.Infrastructure.pdb
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0\ref\DocuMind.Infrastructure.dll
