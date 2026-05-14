@@ -10,3 +10,4 @@ C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\DocuMind.Cor
 C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\refint\DocuMind.Core.dll
 C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\DocuMind.Core.pdb
 C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\ref\DocuMind.Core.dll
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Core\obj\Debug\net8.0\DocuMind.Core.sourcelink.json

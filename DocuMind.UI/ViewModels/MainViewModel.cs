@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
@@ -78,7 +78,12 @@ namespace DocuMind.UI.ViewModels
         public string GoogleSearchEngineId { get => _googleSearchEngineId; set => SetProperty(ref _googleSearchEngineId, value); }
 
         private string _searchQuery = string.Empty;
-        public string SearchQuery { get => _searchQuery; set { if (SetProperty(ref _searchQuery, value)) _ = FilterHistoryAsync(value); } }
+        public string SearchQuery { get => _searchQuery; set { if (SetProperty(ref _searchQuery, value)) FilterHistoryAsyncSafe(value); } }
+
+        private void FilterHistoryAsyncSafe(string query)
+        {
+            _ = FilterHistoryAsync(query);
+        }
 
         private AiProvider _selectedProvider;
         public AiProvider SelectedProvider { get => _selectedProvider; set { if (SetProperty(ref _selectedProvider, value)) OnSelectedProviderChanged(value); } }
@@ -170,26 +175,42 @@ namespace DocuMind.UI.ViewModels
 
         public async Task LoadHistoryAsync()
         {
-            var sessions = await _dbService.GetSessionsAsync();
-            Application.Current.Dispatcher.Invoke(() => {
-                ChatHistory.Clear();
-                foreach (var s in sessions) ChatHistory.Add(s);
-            });
+            try
+            {
+                var sessions = await _dbService.GetSessionsAsync();
+                Application.Current.Dispatcher.Invoke(() => {
+                    ChatHistory.Clear();
+                    foreach (var s in sessions) ChatHistory.Add(s);
+                });
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"LoadHistoryAsync hatası: {ex.Message}");
+                Application.Current.Dispatcher.Invoke(() =>
+                    Messages.Add(new Message { IsUser = false, Content = $"Geçmiş yüklenemedi: {ex.Message}" }));
+            }
         }
 
         private async Task FilterHistoryAsync(string query)
         {
-            var sessions = await _dbService.GetSessionsAsync();
-            Application.Current.Dispatcher.Invoke(() => {
-                ChatHistory.Clear();
-                var normalizedQuery = query ?? string.Empty;
-                var filtered = sessions.Where(s =>
-                    s.Title.Contains(normalizedQuery, StringComparison.OrdinalIgnoreCase)
-                    || (s.Tags?.Contains(normalizedQuery, StringComparison.OrdinalIgnoreCase) ?? false)
-                    || (s.Summary?.Contains(normalizedQuery, StringComparison.OrdinalIgnoreCase) ?? false)
-                    || (s.KeyConcepts?.Contains(normalizedQuery, StringComparison.OrdinalIgnoreCase) ?? false));
-                foreach (var s in filtered) ChatHistory.Add(s);
-            });
+            try
+            {
+                var sessions = await _dbService.GetSessionsAsync();
+                Application.Current.Dispatcher.Invoke(() => {
+                    ChatHistory.Clear();
+                    var normalizedQuery = query ?? string.Empty;
+                    var filtered = sessions.Where(s =>
+                        s.Title.Contains(normalizedQuery, StringComparison.OrdinalIgnoreCase)
+                        || (s.Tags?.Contains(normalizedQuery, StringComparison.OrdinalIgnoreCase) ?? false)
+                        || (s.Summary?.Contains(normalizedQuery, StringComparison.OrdinalIgnoreCase) ?? false)
+                        || (s.KeyConcepts?.Contains(normalizedQuery, StringComparison.OrdinalIgnoreCase) ?? false));
+                    foreach (var s in filtered) ChatHistory.Add(s);
+                });
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"FilterHistoryAsync hatası: {ex.Message}");
+            }
         }
 
         private async void LoadSessionMessages(int sessionId)
@@ -316,10 +337,27 @@ namespace DocuMind.UI.ViewModels
                                 KAVRAMLAR: [Anahtar kelimeler] 
                                 TÜR: [Dosya türü]";
                 var raw = await _currentAiService.GetResponseAsync(fullText.Substring(0, Math.Min(3000, fullText.Length)), prompt, "Belge Analiz Uzmanı");
-                await _dbService.UpdateSessionAnalysisAsync(sessionId, ExtractValue(raw, "ÖZET:"), ExtractValue(raw, "KAVRAMLAR:"), ExtractValue(raw, "TÜR:"));
-                await LoadHistoryAsync();
+                
+                if (string.IsNullOrEmpty(raw) || raw.Contains("Hatası"))
+                {
+                    Application.Current.Dispatcher.Invoke(() =>
+                        Messages.Add(new Message { IsUser = false, Content = $"⚠️ Dokument analiz başarısız oldu: {raw}" }));
+                    System.Diagnostics.Debug.WriteLine($"Document analysis failed: {raw}");
+                }
+                else
+                {
+                    await _dbService.UpdateSessionAnalysisAsync(sessionId, ExtractValue(raw, "ÖZET:"), ExtractValue(raw, "KAVRAMLAR:"), ExtractValue(raw, "TÜR:"));
+                    await LoadHistoryAsync();
+                    Application.Current.Dispatcher.Invoke(() =>
+                        Messages.Add(new Message { IsUser = false, Content = "✅ Dokument analizi tamamlandı." }));
+                }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Document analysis exception: {ex.Message}\n{ex.StackTrace}");
+                Application.Current.Dispatcher.Invoke(() =>
+                    Messages.Add(new Message { IsUser = false, Content = $"❌ Analiz hatası: {ex.Message}" }));
+            }
         }
 
         private async Task SendMessageAsync()
@@ -428,12 +466,26 @@ namespace DocuMind.UI.ViewModels
 
         private async Task ExportChatAsync()
         {
-            var dialog = new SaveFileDialog { Filter = "Text File|*.txt", FileName = "Sohbet_Raporu.txt" };
+            var dialog = new SaveFileDialog { Filter = "Markdown Dosyası|*.md|Metin Belgesi|*.txt", FileName = "Sohbet_Raporu.md" };
             if (dialog.ShowDialog() == true)
             {
-                string content = string.Join("\n\n", Messages.Select(m => $"[{(m.IsUser ? "Kullanıcı" : "AI")}]\n{m.Content}"));
-                await _reportingService.ExportChatAsTextAsync(content, dialog.FileName);
-                Messages.Add(new Message { IsUser = false, Content = $"Sohbet raporu kaydedildi: {dialog.FileName}" });
+                var sb = new System.Text.StringBuilder();
+                sb.AppendLine($"# {LoadedFileName} - Sohbet Raporu");
+                sb.AppendLine($"*Tarih: {DateTime.Now:dd.MM.yyyy HH:mm}*");
+                sb.AppendLine("---\n");
+
+                foreach (var m in Messages)
+                {
+                    string sender = m.IsUser ? "Kullanıcı" : "Yapay Zeka (" + SelectedProvider.ToString() + ")";
+                    sb.AppendLine($"### 👤 {sender}");
+                    sb.AppendLine();
+                    sb.AppendLine(m.Content);
+                    sb.AppendLine();
+                    sb.AppendLine("---");
+                }
+
+                await _reportingService.ExportChatAsTextAsync(sb.ToString(), dialog.FileName);
+                Messages.Add(new Message { IsUser = false, Content = $"Sohbet raporu başarıyla dışa aktarıldı: {dialog.FileName}" });
             }
         }
 

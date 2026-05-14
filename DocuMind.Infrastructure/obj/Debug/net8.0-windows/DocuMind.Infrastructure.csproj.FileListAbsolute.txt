@@ -19,3 +19,4 @@ C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0-wi
 C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0-windows\DocuMind.Infrastructure.pdb
 C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0-windows\DocuMind.Infrastructure.genruntimeconfig.cache
 C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0-windows\ref\DocuMind.Infrastructure.dll
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.Infrastructure\obj\Debug\net8.0-windows\DocuMind.Infrastructure.sourcelink.json

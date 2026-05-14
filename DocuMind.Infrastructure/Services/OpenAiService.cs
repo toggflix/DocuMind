@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,12 +21,11 @@ namespace DocuMind.Infrastructure.Services
         public OpenAiService(string apiKey)
         {
             _apiKey = apiKey;
-            _httpClient = new HttpClient();
-            if (!string.IsNullOrEmpty(_apiKey))
-                _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {_apiKey}");
+            // Use shared HTTP client to prevent socket exhaustion
+            _httpClient = AiServiceFactory.GetSharedHttpClient();
         }
 
-        // --- EKSİK METOT ---
+        // --- MODEL DEĞİŞTİRME ---
         public void SetModel(string modelName)
         {
             if (!string.IsNullOrWhiteSpace(modelName))
@@ -35,9 +34,40 @@ namespace DocuMind.Infrastructure.Services
             }
         }
 
-        public Task<float[]> GetEmbeddingsAsync(string text)
+        public async Task<float[]> GetEmbeddingsAsync(string text)
         {
-            return Task.FromResult(Array.Empty<float>());
+            if (string.IsNullOrEmpty(_apiKey) || string.IsNullOrWhiteSpace(text)) 
+                return Array.Empty<float>();
+
+            var requestBody = new
+            {
+                input = text,
+                model = "text-embedding-3-small"
+            };
+
+            var jsonContent = JsonConvert.SerializeObject(requestBody);
+            var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+            try
+            {
+                var response = await _httpClient.PostAsync("https://api.openai.com/v1/embeddings", content);
+                var responseString = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode) 
+                {
+                    System.Diagnostics.Debug.WriteLine($"OpenAI Embeddings API hatası ({response.StatusCode}): {responseString}");
+                    return Array.Empty<float>();
+                }
+
+                var jsonResponse = JObject.Parse(responseString);
+                var embeddingArray = jsonResponse["data"]?[0]?["embedding"]?.ToObject<float[]>();
+                return embeddingArray ?? Array.Empty<float>();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"OpenAI embeddings hatası: {ex.Message}");
+                return Array.Empty<float>();
+            }
         }
 
         public async Task<string> GetResponseAsync(string context, string question, string systemPrompt)

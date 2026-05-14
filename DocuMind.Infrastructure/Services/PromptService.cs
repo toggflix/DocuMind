@@ -6,7 +6,7 @@ public class PromptService : IPromptService
 {
     private readonly AppDbContext _db;
 
-    public PromptService(AppDbContext db) // Constructor veritabanını almalı
+    public PromptService(AppDbContext db)
     {
         _db = db;
         InitializeDefaultPersonas();
@@ -27,21 +27,25 @@ public class PromptService : IPromptService
                 _db.SaveChanges();
             }
         }
-        catch { /* Hata yönetimi */ }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"Default personas initialization hatası: {ex.Message}");
+        }
     }
 
     public List<Persona> GetAvailablePersonas()
     {
         try
         {
-            return _db.Personas.ToList(); //
+            return _db.Personas.ToList();
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            // Tablo henüz oluşmamışsa hata fırlatmasın, boş liste dönsün
+            System.Diagnostics.Debug.WriteLine($"Personas yükleme hatası: {ex.Message}");
             return new List<Persona>();
         }
     }
+    
     public Persona GetDefaultPersona()
     {
         return _db.Personas.FirstOrDefault(p => p.IsDefault)

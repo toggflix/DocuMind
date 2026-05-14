@@ -140,3 +140,4 @@ C:\Users\Ahmet\source\repos\DocuMind\DocuMind.UI\obj\Debug\net8.0-windows\DocuMi
 C:\Users\Ahmet\source\repos\DocuMind\DocuMind.UI\obj\Debug\net8.0-windows\ref\DocuMind.UI.dll
 C:\Users\Ahmet\source\repos\DocuMind\DocuMind.UI\obj\Debug\net8.0-windows\Views\PersonaEditWindow.baml
 C:\Users\Ahmet\source\repos\DocuMind\DocuMind.UI\obj\Debug\net8.0-windows\Views\PersonaEditWindow.g.cs
+C:\Users\Ahmet\source\repos\DocuMind\DocuMind.UI\obj\Debug\net8.0-windows\DocuMind.UI.sourcelink.json

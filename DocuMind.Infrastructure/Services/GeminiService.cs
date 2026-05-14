@@ -22,7 +22,8 @@ namespace DocuMind.Infrastructure.Services
         public GeminiService(string apiKey)
         {
             _apiKey = apiKey;
-            _httpClient = new HttpClient { Timeout = TimeSpan.FromSeconds(60) };
+            // Use shared HTTP client to prevent socket exhaustion
+            _httpClient = AiServiceFactory.GetSharedHttpClient();
         }
 
         public async Task<string> GetResponseAsync(string context, string question, string systemPrompt)

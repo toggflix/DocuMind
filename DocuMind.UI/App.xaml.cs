@@ -27,33 +27,30 @@ namespace DocuMind.UI
             services.AddDbContext<AppDbContext>();
             services.AddSingleton<DatabaseService>();
 
-            // --- B. AI VE PDF SERVİSLERİ ---
+            // --- B. AI SERVICE FACTORY (NEW) ---
+            services.AddSingleton<IAiServiceFactory, AiServiceFactory>();
+
+            // --- C. PDF SERVİSLERİ ---
             services.AddSingleton<IPdfService, PdfPigService>();
             services.AddSingleton<SettingsService>();
 
-            // IAiService için mevcut sağlayıcıyı SettingsService'e göre çözmek gerekebilir
-            // Şimdilik varsayılan bir IAiService kaydı (Örn: Ollama veya Gemini) olmalı.
-            // Eğer Ollama kullanıyorsan:
-            services.AddSingleton<IAiService, OllamaService>();
-
-            // --- C. SEMANTIC SEARCH (RAG MOTORU) ---
-            // İşte senin aradığın, "db" parametresi hatasını çözen kısım burası:
+            // --- D. SEMANTIC SEARCH (RAG MOTORU) ---
             services.AddSingleton<SemanticSearchService>(sp =>
             {
-                var ai = sp.GetRequiredService<IAiService>();
+                var ai = sp.GetRequiredService<IAiServiceFactory>().CreateService(AiProvider.Ollama);
                 var db = sp.GetRequiredService<AppDbContext>();
                 return new SemanticSearchService(ai, db);
             });
 
-            // --- D. DİĞER PRO SERVİSLER ---
+            // --- E. DİĞER SERVİSLER ---
             services.AddSingleton<IPromptService, PromptService>();
             services.AddSingleton<IReportingService, ReportingService>();
             services.AddSingleton<IWebSearchService, WebSearchService>();
 
-            // --- E. VIEWMODEL ---
+            // --- F. VIEWMODEL ---
             services.AddSingleton<MainViewModel>();
 
-            // --- F. PENCERELER ---
+            // --- G. PENCERELER ---
             services.AddSingleton<MainWindow>();
 
             return services.BuildServiceProvider();
@@ -63,21 +60,28 @@ namespace DocuMind.UI
         {
             base.OnStartup(e);
 
+            var mainWindow = Services.GetRequiredService<MainWindow>();
+            mainWindow.Show();
+
+            // Database initialization asynchronously to prevent UI freeze
+            InitializeDatabaseAsync();
+        }
+
+        private async void InitializeDatabaseAsync()
+        {
             try
             {
                 using (var scope = Services.CreateScope())
                 {
                     var databaseService = scope.ServiceProvider.GetRequiredService<DatabaseService>();
-                    databaseService.EnsureReadyAsync().GetAwaiter().GetResult();
+                    await databaseService.EnsureReadyAsync();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Veritabanı hatası: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Veritabanı başlatma hatası: {ex.Message}");
+                MessageBox.Show($"Veritabanı başlatılırken hata oluştu: {ex.Message}\n\nUygulama kısıtlı olarak devam edecektir.", "Uyarı");
             }
-
-            var mainWindow = Services.GetRequiredService<MainWindow>();
-            mainWindow.Show();
         }
     }
 }

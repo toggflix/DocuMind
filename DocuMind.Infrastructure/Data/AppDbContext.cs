@@ -38,6 +38,19 @@ namespace DocuMind.Infrastructure.Data
                 .WithMany(s => s.Messages)
                 .HasForeignKey(m => m.SessionId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            // Performans iyileştirmesi: Sık sorgulanan alanlar için indexler
+            modelBuilder.Entity<Message>()
+                .HasIndex(m => m.SessionId)
+                .HasDatabaseName("IX_Message_SessionId");
+
+            modelBuilder.Entity<Session>()
+                .HasIndex(s => s.CreatedAt)
+                .HasDatabaseName("IX_Session_CreatedAt");
+
+            modelBuilder.Entity<DocumentChunk>()
+                .HasIndex(dc => dc.SessionId)
+                .HasDatabaseName("IX_DocumentChunk_SessionId");
         }
     }
 }

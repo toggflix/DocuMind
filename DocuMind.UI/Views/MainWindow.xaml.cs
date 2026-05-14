@@ -29,7 +29,11 @@ namespace DocuMind.UI.Views
                     UseShellExecute = true
                 });
             }
-            catch { }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Hyperlink açma hatası: {ex.Message}");
+                MessageBox.Show($"Bağlantı açılamadı: {ex.Message}", "Hata", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
 
         private void CopyMessage_Click(object sender, RoutedEventArgs e)

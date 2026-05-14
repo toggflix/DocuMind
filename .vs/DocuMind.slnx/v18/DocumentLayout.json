@@ -187,7 +187,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 213,
-          "SelectedChildIndex": 36,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
@@ -219,23 +219,6 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PersonaEditWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Views\\PersonaEditWindow.xaml.cs",
-              "RelativeDocumentMoniker": "DocuMind.UI\\Views\\PersonaEditWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Views\\PersonaEditWindow.xaml.cs",
-              "RelativeToolTip": "DocuMind.UI\\Views\\PersonaEditWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T20:06:03.704Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "PersonaEditWindow.xaml",
@@ -256,8 +239,7 @@
               "RelativeToolTip": "DocuMind.Core\\Models\\DocumentChunk.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T19:28:00.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T19:28:00.1Z"
             },
             {
               "$type": "Document",
@@ -298,6 +280,35 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\ChatMessage.cs",
+              "RelativeDocumentMoniker": "DocuMind.Core\\Models\\ChatMessage.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\ChatMessage.cs",
+              "RelativeToolTip": "DocuMind.Core\\Models\\ChatMessage.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T17:00:08.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PersonaEditWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Views\\PersonaEditWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DocuMind.UI\\Views\\PersonaEditWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.UI\\Views\\PersonaEditWindow.xaml.cs",
+              "RelativeToolTip": "DocuMind.UI\\Views\\PersonaEditWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T20:06:03.704Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "WebSearchService.cs",
               "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Infrastructure\\Services\\WebSearchService.cs",
@@ -306,8 +317,7 @@
               "RelativeToolTip": "DocuMind.Infrastructure\\Services\\WebSearchService.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAAwEoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T13:12:11.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T13:12:11.649Z"
             },
             {
               "$type": "Document",
@@ -343,8 +353,7 @@
               "RelativeToolTip": "DocuMind.Core\\Interfaces\\IReportingService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T13:09:49.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T13:09:49.523Z"
             },
             {
               "$type": "Document",
@@ -368,8 +377,7 @@
               "RelativeToolTip": "DocuMind.Core\\Interfaces\\IPromptService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T13:08:54.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T13:08:54.628Z"
             },
             {
               "$type": "Document",
@@ -453,8 +461,7 @@
               "RelativeToolTip": "DocuMind.Core\\Models\\TextSegment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T12:56:05.859Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T12:56:05.859Z"
             },
             {
               "$type": "Document",
@@ -512,8 +519,7 @@
               "RelativeToolTip": "DocuMind.Core\\Interfaces\\IFileDialogService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T12:09:16.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T12:09:16.733Z"
             },
             {
               "$type": "Document",
@@ -561,8 +567,7 @@
               "RelativeToolTip": "DocuMind.Infrastructure\\Services\\SettingsService.cs",
               "ViewState": "AgIAAGIAAAAAAAAAAAAAwHsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T10:18:12.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T10:18:12.633Z"
             },
             {
               "$type": "Document",
@@ -587,19 +592,6 @@
               "ViewState": "AgIAADsBAAAAAAAAAAAAAE0AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-31T17:27:01.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChatMessage.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\ChatMessage.cs",
-              "RelativeDocumentMoniker": "DocuMind.Core\\Models\\ChatMessage.cs",
-              "ToolTip": "C:\\Users\\Ahmet\\source\\repos\\DocuMind\\DocuMind.Core\\Models\\ChatMessage.cs",
-              "RelativeToolTip": "DocuMind.Core\\Models\\ChatMessage.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA8wA8AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T17:00:08.758Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -647,8 +639,7 @@
               "RelativeToolTip": "DocuMind.Infrastructure\\Services\\PdfPigService.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAQwAYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T16:52:39.732Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-31T16:52:39.732Z"
             },
             {
               "$type": "Document",
@@ -660,8 +651,7 @@
               "RelativeToolTip": "DocuMind.Core\\Enums\\AiProvider.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T16:51:17.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-31T16:51:17.096Z"
             },
             {
               "$type": "Document",
@@ -673,8 +663,7 @@
               "RelativeToolTip": "DocuMind.Core\\Interfaces\\IAiService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T16:50:49.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-31T16:50:49.215Z"
             },
             {
               "$type": "Document",
@@ -686,8 +675,7 @@
               "RelativeToolTip": "DocuMind.Core\\Interfaces\\IPdfService.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAqwAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T16:50:23.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-31T16:50:23.37Z"
             },
             {
               "$type": "Document",
@@ -757,8 +745,7 @@
               "RelativeToolTip": "DocuMind.UI\\Views\\MainWindow.xaml.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAYwDMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T15:52:08.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-31T15:52:08.015Z"
             }
           ]
         }

@@ -1,4 +1,4 @@
-﻿using DocuMind.Core.Models;
+using DocuMind.Core.Models;
 using DocuMind.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -55,7 +55,13 @@ namespace DocuMind.Infrastructure.Services
                 if (ColumnExists(connection, tableName, columnName)) return;
                 using var command = connection.CreateCommand();
                 command.CommandText = $"ALTER TABLE {tableName} ADD COLUMN {columnName} {columnDefinition}";
+                command.CommandTimeout = 30; // Add 30 second timeout
                 command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"EnsureColumn error for {tableName}.{columnName}: {ex.Message}");
+                // Don't throw - continue with other operations
             }
             finally
             {
@@ -86,19 +92,9 @@ namespace DocuMind.Infrastructure.Services
         // --- OTURUM (SESSION) İŞLEMLERİ ---
 
         // Yeni bir sohbet başlat
-        public async Task<Session> CreateSessionAsync(string title, string filePath)
+        public Task<Session> CreateSessionAsync(string title, string filePath)
         {
-            var session = new Session
-            {
-                Title = title,
-                FilePath = filePath,
-                CreatedAt = DateTime.Now
-            };
-
-            // DÜZELTME: ChatSessions yerine Sessions
-            _context.Sessions.Add(session);
-            await _context.SaveChangesAsync();
-            return session;
+            return CreateSessionAsync(title, filePath, "");
         }
 
         // Tüm geçmiş sohbetleri getir

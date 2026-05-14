@@ -78,9 +78,9 @@ namespace DocuMind.Infrastructure.Services
                     return models ?? new List<string>();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                // Ollama kapalıysa
+                System.Diagnostics.Debug.WriteLine($"Ollama model listesi hatası: {ex.Message}");
             }
             return new List<string>();
         }
@@ -103,7 +103,11 @@ namespace DocuMind.Infrastructure.Services
                 }
                 return Array.Empty<float>();
             }
-            catch { return Array.Empty<float>(); }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Ollama embeddings hatası: {ex.Message}");
+                return Array.Empty<float>();
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<Window x:Class="DocuMind.UI.Views.MainWindow"
+<Window x:Class="DocuMind.UI.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -8,24 +8,35 @@
         xmlns:converters="clr-namespace:DocuMind.UI.Converters"
         xmlns:markdig="clr-namespace:Markdig.Wpf;assembly=Markdig.Wpf"
         mc:Ignorable="d"
-        Title="DocuMind Pro Studio" Height="800" Width="1300"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="14"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Title="DocuMind Pro Studio" Height="850" Width="1400"
         WindowStartupLocation="CenterScreen"
-        Background="#F5F6FA"
+        Background="#F0F2F5"
         FontFamily="Segoe UI"
         AllowDrop="True" Drop="Grid_Drop">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
         <converters:InverseBooleanToVisibilityConverter x:Key="InverseBooleanToVisibilityConverter"/>
+        <Style x:Key="ModernScrollStyle" TargetType="ScrollViewer">
+            <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
+            <Setter Property="HorizontalScrollBarVisibility" Value="Disabled" />
+            <Setter Property="Padding" Value="0,0,5,0" />
+        </Style>
     </Window.Resources>
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="280"/>
+            <ColumnDefinition Width="300"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="340"/>
+            <ColumnDefinition Width="360"/>
         </Grid.ColumnDefinitions>
 
-        <Border Grid.Column="0" Background="White" BorderBrush="#E0E0E0" BorderThickness="0,0,1,0">
+        <!-- Left Sidebar (Library) -->
+        <Border Grid.Column="0" Background="#FFFFFF" BorderBrush="#E5E7EB" BorderThickness="0,0,1,0">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -33,43 +44,51 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <StackPanel Grid.Row="0" Margin="20,25,20,10">
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Bookshelf" Foreground="#6C5CE7" Width="24" Height="24" VerticalAlignment="Center"/>
-                        <TextBlock Text="Kütüphane" FontSize="18" FontWeight="Bold" Margin="10,0,0,0" Foreground="#2D3436"/>
+                <StackPanel Grid.Row="0" Margin="20,25,20,15">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                        <materialDesign:PackIcon Kind="BookMultiple" Foreground="#4F46E5" Width="28" Height="28" VerticalAlignment="Center"/>
+                        <TextBlock Text="Kütüphane" FontSize="20" FontWeight="Bold" Margin="12,0,0,0" Foreground="#111827" VerticalAlignment="Center"/>
                     </StackPanel>
+                    
                     <Button Command="{Binding UploadFileCommand}" 
-                            Margin="0,15,0,0"
+                            Height="45"
                             Style="{StaticResource MaterialDesignRaisedButton}"
-                            Background="#6C5CE7" BorderBrush="{x:Null}">
+                            Background="#4F46E5" BorderBrush="{x:Null}"
+                            materialDesign:ButtonAssist.CornerRadius="8">
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="FilePlusOutline" Width="16" Height="16" Margin="0,0,8,0"/>
-                            <TextBlock Text="YENİ DÖKÜMAN EKLE"/>
+                            <materialDesign:PackIcon Kind="CloudUploadOutline" Width="20" Height="20" Margin="0,0,8,0" VerticalAlignment="Center"/>
+                            <TextBlock Text="YENİ DÖKÜMAN EKLE" FontWeight="SemiBold" VerticalAlignment="Center"/>
                         </StackPanel>
                     </Button>
                     <Button Command="{Binding NewChatCommand}"
-                            Margin="0,8,0,0"
-                            Style="{StaticResource MaterialDesignOutlinedButton}">
+                            Margin="0,10,0,0"
+                            Height="45"
+                            Style="{StaticResource MaterialDesignOutlinedButton}"
+                            materialDesign:ButtonAssist.CornerRadius="8"
+                            BorderBrush="#D1D5DB" Foreground="#374151">
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="ChatPlusOutline" Width="16" Height="16" Margin="0,0,8,0"/>
-                            <TextBlock Text="BOŞ SOHBET"/>
+                            <materialDesign:PackIcon Kind="ChatPlusOutline" Width="20" Height="20" Margin="0,0,8,0" VerticalAlignment="Center"/>
+                            <TextBlock Text="YENİ SOHBET" FontWeight="SemiBold" VerticalAlignment="Center"/>
                         </StackPanel>
                     </Button>
                 </StackPanel>
 
                 <TextBox Grid.Row="1" Text="{Binding SearchQuery, UpdateSourceTrigger=PropertyChanged}"
                          materialDesign:HintAssist.Hint="Döküman veya Etiket Ara..."
-                         Margin="15,5,15,15"
+                         Margin="20,5,20,15"
+                         Padding="10,8"
                          Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                         materialDesign:TextFieldAssist.HasClearButton="True"/>
+                         materialDesign:TextFieldAssist.HasClearButton="True"
+                         />
 
                 <ListBox Grid.Row="2" ItemsSource="{Binding ChatHistory}" SelectedItem="{Binding SelectedHistoryItem}" 
-                         Background="Transparent" BorderThickness="0" Padding="10">
+                         Background="Transparent" BorderThickness="0" Padding="10,0,10,10"
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                     <ListBox.ItemContainerStyle>
                         <Style TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
-                            <Setter Property="Padding" Value="10"/>
+                            <Setter Property="Padding" Value="12,12"/>
                             <Setter Property="materialDesign:ListBoxItemAssist.CornerRadius" Value="8"/>
-                            <Setter Property="Margin" Value="0,0,0,5"/>
+                            <Setter Property="Margin" Value="0,0,0,8"/>
                         </Style>
                     </ListBox.ItemContainerStyle>
                     <ListBox.ItemTemplate>
@@ -80,16 +99,19 @@
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <materialDesign:PackIcon Kind="FileDocumentOutline" Foreground="Gray" VerticalAlignment="Center"/>
-                                <StackPanel Grid.Column="1" Margin="10,0" VerticalAlignment="Center">
-                                    <TextBlock Text="{Binding Title}" FontWeight="SemiBold" FontSize="13" TextTrimming="CharacterEllipsis"/>
-                                    <TextBlock Text="{Binding Tags, TargetNullValue='Etiket Yok'}" FontSize="10" Foreground="#6C5CE7" FontStyle="Italic"/>
+                                <Border Width="40" Height="40" CornerRadius="8" Background="#EEF2FF" VerticalAlignment="Center">
+                                    <materialDesign:PackIcon Kind="FileDocumentOutline" Foreground="#4F46E5" Width="22" Height="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <StackPanel Grid.Column="1" Margin="12,0" VerticalAlignment="Center">
+                                    <TextBlock Text="{Binding Title}" FontWeight="SemiBold" FontSize="14" Foreground="#1F2937" TextTrimming="CharacterEllipsis"/>
+                                    <TextBlock Text="{Binding Tags, TargetNullValue='Etiket Yok'}" FontSize="12" Foreground="#6B7280" Margin="0,2,0,0" FontStyle="Italic"/>
                                 </StackPanel>
                                 <Button Grid.Column="2" 
                                         Command="{Binding DataContext.DeleteSessionCommand, RelativeSource={RelativeSource AncestorType=Window}}"
                                         CommandParameter="{Binding}"
-                                        Style="{StaticResource MaterialDesignToolButton}" Height="20" Width="20" Padding="0">
-                                    <materialDesign:PackIcon Kind="TrashCanOutline" Width="14" Height="14" Foreground="#FF7675"/>
+                                        Style="{StaticResource MaterialDesignIconButton}" Height="32" Width="32" Padding="0"
+                                        ToolTip="Sil">
+                                    <materialDesign:PackIcon Kind="TrashCanOutline" Width="18" Height="18" Foreground="#EF4444"/>
                                 </Button>
                             </Grid>
                         </DataTemplate>
@@ -98,43 +120,63 @@
             </Grid>
         </Border>
 
-        <Grid Grid.Column="1" Background="#F5F6FA">
+        <!-- Main Chat Area -->
+        <Grid Grid.Column="1" Background="#F9FAFB">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <Border Background="White" Padding="20,15" Effect="{StaticResource MaterialDesignShadowDepth1}">
+            <!-- Header -->
+            <Border Background="#FFFFFF" Padding="25,18" BorderBrush="#E5E7EB" BorderThickness="0,0,0,1">
                 <StackPanel Orientation="Horizontal">
-                    <materialDesign:PackIcon Kind="Robot" Width="24" Height="24" Foreground="#00B894" VerticalAlignment="Center"/>
-                    <StackPanel Margin="15,0,0,0">
-                        <TextBlock Text="{Binding LoadedFileName, TargetNullValue='Hoş Geldiniz'}" FontSize="16" FontWeight="SemiBold" Foreground="#2D3436"/>
-                        <TextBlock Text="{Binding SelectedProvider}" FontSize="11" Foreground="Gray"/>
+                    <Border Width="45" Height="45" CornerRadius="22.5" Background="#ECFDF5" VerticalAlignment="Center">
+                        <materialDesign:PackIcon Kind="RobotOutline" Width="26" Height="26" Foreground="#10B981" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <StackPanel Margin="15,0,0,0" VerticalAlignment="Center">
+                        <TextBlock Text="{Binding LoadedFileName, TargetNullValue='Asistan Hazır'}" FontSize="18" FontWeight="Bold" Foreground="#111827" TextTrimming="CharacterEllipsis" MaxWidth="500"/>
+                        <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
+                            <TextBlock Text="{Binding SelectedProvider}" FontSize="13" Foreground="#6B7280"/>
+                            <TextBlock Text=" • " Foreground="#D1D5DB" Margin="4,0"/>
+                            <TextBlock Text="{Binding SelectedModelVersion, TargetNullValue='Model Seçilmedi'}" FontSize="13" Foreground="#6B7280"/>
+                        </StackPanel>
                     </StackPanel>
                 </StackPanel>
             </Border>
 
-            <ScrollViewer Grid.Row="1" x:Name="ChatScroller" Padding="15">
+            <!-- Chat Content -->
+            <ScrollViewer Grid.Row="1" x:Name="ChatScroller" Padding="25,20">
                 <StackPanel>
+                    <!-- Empty State -->
+                    <StackPanel Visibility="{Binding Messages.Count, Converter={StaticResource InverseBooleanToVisibilityConverter}, FallbackValue=Collapsed}"
+                                HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0">
+                        <materialDesign:PackIcon Kind="MessageTextOutline" Width="64" Height="64" Foreground="#D1D5DB" HorizontalAlignment="Center" Margin="0,0,0,15"/>
+                        <TextBlock Text="Nasıl yardımcı olabilirim?" FontSize="24" FontWeight="Bold" Foreground="#374151" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Bir doküman yükleyerek sorular sormaya başlayın." FontSize="14" Foreground="#6B7280" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                    </StackPanel>
+
                     <ItemsControl ItemsSource="{Binding Messages}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <Grid Margin="0,8">
-                                    <Border HorizontalAlignment="Right" Background="#6C5CE7" CornerRadius="15,15,0,15" Padding="15,10" 
-                                            Visibility="{Binding IsUser, Converter={StaticResource BooleanToVisibilityConverter}}" MaxWidth="600">
-                                        <TextBlock Text="{Binding Content}" Foreground="White" TextWrapping="Wrap" FontSize="14"/>
+                                <Grid Margin="0,10">
+                                    <!-- User Message -->
+                                    <Border HorizontalAlignment="Right" Background="#4F46E5" CornerRadius="18,18,4,18" Padding="18,12" 
+                                            Visibility="{Binding IsUser, Converter={StaticResource BooleanToVisibilityConverter}}" MaxWidth="650">
+                                        <TextBlock Text="{Binding Content}" Foreground="#FFFFFF" TextWrapping="Wrap" FontSize="15" LineHeight="22"/>
                                     </Border>
 
-                                    <Border HorizontalAlignment="Left" Background="White" CornerRadius="0,15,15,15" Padding="15,10" 
-                                            Visibility="{Binding IsUser, Converter={StaticResource InverseBooleanToVisibilityConverter}}" MaxWidth="750">
+                                    <!-- AI Message -->
+                                    <Border HorizontalAlignment="Left" Background="#FFFFFF" CornerRadius="4,18,18,18" Padding="18,12" 
+                                            Visibility="{Binding IsUser, Converter={StaticResource InverseBooleanToVisibilityConverter}}" MaxWidth="800"
+                                            Effect="{StaticResource MaterialDesignShadowDepth1}">
                                         <StackPanel>
-                                            <markdig:MarkdownViewer Markdown="{Binding Content}"/>
+                                            <markdig:MarkdownViewer Markdown="{Binding Content}" Margin="0,0,0,8"/>
                                             <Button Click="CopyMessage_Click" 
                                                     HorizontalAlignment="Right" 
                                                     Style="{StaticResource MaterialDesignToolButton}"
-                                                    Margin="0,5,0,0" ToolTip="Kopyala">
-                                                <materialDesign:PackIcon Kind="ContentCopy" Width="14" Foreground="LightGray"/>
+                                                    Margin="0,5,0,0" ToolTip="Panoya Kopyala" Height="28" Width="28" Padding="4">
+                                                <materialDesign:PackIcon Kind="ContentCopy" Width="16" Height="16" Foreground="#9CA3AF"/>
                                             </Button>
                                         </StackPanel>
                                     </Border>
@@ -144,162 +186,219 @@
                     </ItemsControl>
 
                     <ProgressBar Style="{StaticResource MaterialDesignCircularProgressBar}" 
-                                 Value="0" IsIndeterminate="True" Width="30" Height="30" Margin="0,20"
+                                 Value="0" IsIndeterminate="True" Width="36" Height="36" Margin="0,20" Foreground="#4F46E5"
                                  Visibility="{Binding IsLoading, Converter={StaticResource BooleanToVisibilityConverter}}"/>
                 </StackPanel>
             </ScrollViewer>
 
-            <Border Grid.Row="2" Background="White" Padding="15" Margin="20" CornerRadius="15">
+            <!-- Input Area -->
+            <Border Grid.Row="2" Background="#FFFFFF" Padding="12,12,12,12" Margin="25,0,25,25" CornerRadius="16" 
+                    Effect="{StaticResource MaterialDesignShadowDepth2}">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
-                    <TextBox Text="{Binding UserQuestion, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Döküman hakkında soru sorun..." BorderThickness="0">
+                    <TextBox Text="{Binding UserQuestion, UpdateSourceTrigger=PropertyChanged}" 
+                             materialDesign:HintAssist.Hint="Mesajınızı veya sorunuzu yazın..." 
+                             BorderThickness="0" 
+                             AcceptsReturn="True" 
+                             TextWrapping="Wrap" 
+                             MaxHeight="120" 
+                             VerticalScrollBarVisibility="Auto"
+                             FontSize="15"
+                             Margin="10,0,10,0"
+                             VerticalAlignment="Center">
                         <TextBox.InputBindings>
+                            <KeyBinding Key="Enter" Modifiers="Shift" Command="{x:Null}"/>
                             <KeyBinding Key="Enter" Command="{Binding SendMessageCommand}"/>
                         </TextBox.InputBindings>
                     </TextBox>
-                    <Button Grid.Column="1" Command="{Binding SendMessageCommand}" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#6C5CE7" BorderBrush="{x:Null}">
-                        <materialDesign:PackIcon Kind="Send"/>
+                    <Button Grid.Column="1" Command="{Binding SendMessageCommand}" 
+                            Style="{StaticResource MaterialDesignFloatingActionMiniButton}" 
+                            Background="#4F46E5" BorderBrush="{x:Null}"
+                            VerticalAlignment="Bottom" Margin="0,0,5,0">
+                        <materialDesign:PackIcon Kind="Send" Width="20" Height="20"/>
                     </Button>
                 </Grid>
             </Border>
         </Grid>
 
-        <Border Grid.Column="2" Background="#FDFDFD" BorderBrush="#E0E0E0" BorderThickness="1,0,0,0">
-            <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <!-- Right Sidebar (Control Center) -->
+        <Border Grid.Column="2" Background="#F9FAFB" BorderBrush="#E5E7EB" BorderThickness="1,0,0,0">
+            <ScrollViewer Style="{StaticResource ModernScrollStyle}">
                 <StackPanel Margin="20">
-                    <TextBlock Text="KONTROL MERKEZİ" Foreground="#B2BEC3" FontSize="12" FontWeight="Bold" Margin="0,0,0,20"/>
+                    <TextBlock Text="KONTROL MERKEZİ" Foreground="#9CA3AF" FontSize="12" FontWeight="ExtraBold" Margin="4,5,0,20"/>
 
-                    <materialDesign:Card Margin="0,0,0,15" Background="White" UniformCornerRadius="8" Padding="15">
+                    <!-- Settings Card -->
+                    <materialDesign:Card Margin="0,0,0,18" Background="#FFFFFF" materialDesign:ThemeAssist.Theme="Light" UniformCornerRadius="12" Padding="20">
                         <StackPanel>
-                            <TextBlock Text="Yapay Zeka Ayarları" FontWeight="SemiBold" Foreground="#2D3436" Margin="0,0,0,12"/>
-                            <ComboBox ItemsSource="{Binding Providers}" SelectedItem="{Binding SelectedProvider}" Margin="0,0,0,10" Style="{StaticResource MaterialDesignOutlinedComboBox}"/>
-                            <ComboBox ItemsSource="{Binding ModelVersions}" SelectedItem="{Binding SelectedModelVersion}" Style="{StaticResource MaterialDesignOutlinedComboBox}"/>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,16">
+                                <materialDesign:PackIcon Kind="CogOutline" Foreground="#374151" Width="20" Height="20" VerticalAlignment="Center"/>
+                                <TextBlock Text="Yapay Zeka Ayarları" FontWeight="Bold" FontSize="15" Foreground="#111827" Margin="8,0,0,0" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            
+                            <ComboBox ItemsSource="{Binding Providers}" SelectedItem="{Binding SelectedProvider}" Margin="0,0,0,15" 
+                                      Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Sağlayıcı"
+                                      />
+                            <ComboBox ItemsSource="{Binding ModelVersions}" SelectedItem="{Binding SelectedModelVersion}" 
+                                      Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Model Versiyonu"
+                                      />
 
-                            <TextBox Text="{Binding ApiKeyInput}" materialDesign:HintAssist.Hint="API Anahtarı" Margin="0,10,0,0" Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                            <TextBox Text="{Binding ApiKeyInput}" materialDesign:HintAssist.Hint="API Anahtarı" Margin="0,15,0,0" 
+                                     Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                                     
                                      Visibility="{Binding IsApiKeyVisible, Converter={StaticResource BooleanToVisibilityConverter}}">
                                 <TextBox.InputBindings>
                                     <KeyBinding Key="Enter" Command="{Binding SaveApiKeyCommand}"/>
                                 </TextBox.InputBindings>
                             </TextBox>
-                            <StackPanel Orientation="Horizontal" Margin="0,8,0,0"
+                            
+                            <StackPanel Orientation="Horizontal" Margin="0,12,0,0" HorizontalAlignment="Right"
                                         Visibility="{Binding IsApiKeyVisible, Converter={StaticResource BooleanToVisibilityConverter}}">
-                                <Button Command="{Binding SaveApiKeyCommand}" Style="{StaticResource MaterialDesignOutlinedButton}" Padding="10,4">
+                                <Button Command="{Binding SaveApiKeyCommand}" Style="{StaticResource MaterialDesignFlatButton}" Foreground="#4F46E5" Padding="12,6">
                                     <StackPanel Orientation="Horizontal">
-                                        <materialDesign:PackIcon Kind="ContentSaveOutline" Width="16" Height="16" Margin="0,0,6,0"/>
-                                        <TextBlock Text="Kaydet"/>
+                                        <materialDesign:PackIcon Kind="ContentSaveOutline" Width="18" Height="18" Margin="0,0,6,0"/>
+                                        <TextBlock Text="Kaydet" FontWeight="SemiBold"/>
                                     </StackPanel>
                                 </Button>
-                                <Button Command="{Binding TestApiConnectionCommand}" Style="{StaticResource MaterialDesignOutlinedButton}" Padding="10,4" Margin="8,0,0,0">
+                                <Button Command="{Binding TestApiConnectionCommand}" Style="{StaticResource MaterialDesignFlatButton}" Foreground="#10B981" Padding="12,6" Margin="8,0,0,0">
                                     <StackPanel Orientation="Horizontal">
-                                        <materialDesign:PackIcon Kind="Connection" Width="16" Height="16" Margin="0,0,6,0"/>
-                                        <TextBlock Text="Test Et"/>
+                                        <materialDesign:PackIcon Kind="Connection" Width="18" Height="18" Margin="0,0,6,0"/>
+                                        <TextBlock Text="Test Et" FontWeight="SemiBold"/>
                                     </StackPanel>
                                 </Button>
                             </StackPanel>
-                            <TextBlock Text="{Binding ApiConnectionStatus}" FontSize="11" Foreground="Gray" TextWrapping="Wrap" Margin="0,6,0,0"/>
+                            <TextBlock Text="{Binding ApiConnectionStatus}" FontSize="12" Foreground="#6B7280" TextWrapping="Wrap" Margin="0,8,0,0"/>
                         </StackPanel>
                     </materialDesign:Card>
 
-                    <materialDesign:Card Margin="0,0,0,15" Background="White" UniformCornerRadius="8" Padding="15">
+                    <!-- Persona Card -->
+                    <materialDesign:Card Margin="0,0,0,18" Background="#FFFFFF" UniformCornerRadius="12" Padding="20">
                         <StackPanel>
-                            <TextBlock Text="Uzmanlık Modu (Persona)" FontWeight="SemiBold" Foreground="#2D3436" Margin="0,0,0,12"/>
-                            <Grid>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,16">
+                                <materialDesign:PackIcon Kind="AccountTieOutline" Foreground="#374151" Width="20" Height="20" VerticalAlignment="Center"/>
+                                <TextBlock Text="Uzmanlık Modu" FontWeight="Bold" FontSize="15" Foreground="#111827" Margin="8,0,0,0" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            
+                            <Grid Margin="0,0,0,12">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <ComboBox ItemsSource="{Binding Personas}" SelectedItem="{Binding SelectedPersona}" DisplayMemberPath="Name" Style="{StaticResource MaterialDesignOutlinedComboBox}"/>
-                                <Button Grid.Column="1" Command="{Binding OpenPersonaEditorCommand}" Style="{StaticResource MaterialDesignIconButton}" Margin="5,0,0,0">
-                                    <materialDesign:PackIcon Kind="PlusCircle" Foreground="#6C5CE7"/>
+                                <ComboBox ItemsSource="{Binding Personas}" SelectedItem="{Binding SelectedPersona}" DisplayMemberPath="Name" 
+                                          Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Persona Seçin"
+                                          />
+                                <Button Grid.Column="1" Command="{Binding OpenPersonaEditorCommand}" Style="{StaticResource MaterialDesignIconButton}" Margin="8,0,0,0"
+                                        ToolTip="Yeni Persona Ekle">
+                                    <materialDesign:PackIcon Kind="PlusCircle" Foreground="#4F46E5" Width="26" Height="26"/>
                                 </Button>
                             </Grid>
                             <Button Command="{Binding DeletePersonaCommand}" CommandParameter="{Binding SelectedPersona}"
-                                    Style="{StaticResource MaterialDesignOutlinedButton}" Margin="0,8,0,0">
+                                    Style="{StaticResource MaterialDesignOutlinedButton}" BorderBrush="#FCA5A5" Foreground="#EF4444"
+                                    materialDesign:ButtonAssist.CornerRadius="6">
                                 <StackPanel Orientation="Horizontal">
-                                    <materialDesign:PackIcon Kind="TrashCanOutline" Width="16" Height="16" Margin="0,0,8,0"/>
+                                    <materialDesign:PackIcon Kind="TrashCanOutline" Width="18" Height="18" Margin="0,0,8,0"/>
                                     <TextBlock Text="Seçili Uzmanı Sil"/>
                                 </StackPanel>
                             </Button>
                         </StackPanel>
                     </materialDesign:Card>
 
-                    <materialDesign:Card Margin="0,0,0,15" Background="#E8EAF6" UniformCornerRadius="10"
+                    <!-- File Info Card -->
+                    <materialDesign:Card Margin="0,0,0,18" Background="#EFF6FF" UniformCornerRadius="12"
                                           Visibility="{Binding IsFileLoaded, Converter={StaticResource BooleanToVisibilityConverter}}">
-                        <Border Padding="15">
+                        <Border Padding="20">
                             <StackPanel>
-                                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                                    <materialDesign:PackIcon Kind="ClipboardCheck" Foreground="#3F51B5"/>
-                                    <TextBlock Text="DOSYA KARNESİ" FontWeight="Bold" Foreground="#3F51B5" Margin="10,0,0,0"/>
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                                    <materialDesign:PackIcon Kind="ClipboardTextOutline" Foreground="#2563EB" Width="20" Height="20"/>
+                                    <TextBlock Text="DOSYA KARNESİ" FontWeight="Bold" Foreground="#2563EB" Margin="8,0,0,0"/>
                                 </StackPanel>
 
-                                <TextBlock Text="Dosya Türü" FontSize="10" Foreground="Gray" FontWeight="Bold"/>
-                                <TextBlock Text="{Binding SelectedHistoryItem.DocumentType, TargetNullValue='Tanımlanıyor...'}" FontSize="12" Margin="0,0,0,8" FontWeight="SemiBold"/>
+                                <Grid Margin="0,0,0,10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Tür:" FontSize="13" Foreground="#6B7280" FontWeight="SemiBold" Margin="0,0,10,0"/>
+                                    <TextBlock Grid.Column="1" Text="{Binding SelectedHistoryItem.DocumentType, TargetNullValue='Tanımlanıyor...'}" FontSize="13" Foreground="#1F2937" FontWeight="Medium"/>
+                                </Grid>
 
-                                <TextBlock Text="Özet" FontSize="10" Foreground="Gray" FontWeight="Bold"/>
-                                <TextBlock Text="{Binding SelectedHistoryItem.Summary, TargetNullValue='Analiz yapılıyor...'}" FontSize="12" TextWrapping="Wrap" Margin="0,0,0,8" FontStyle="Italic"/>
+                                <TextBlock Text="Özet:" FontSize="13" Foreground="#6B7280" FontWeight="SemiBold" Margin="0,0,0,4"/>
+                                <TextBlock Text="{Binding SelectedHistoryItem.Summary, TargetNullValue='Analiz yapılıyor...'}" FontSize="13" Foreground="#374151" TextWrapping="Wrap" Margin="0,0,0,10" FontStyle="Italic"/>
 
-                                <TextBlock Text="Anahtar Kavramlar" FontSize="10" Foreground="Gray" FontWeight="Bold" Margin="0,0,0,4"/>
-                                <TextBlock Text="{Binding SelectedHistoryItem.KeyConcepts}" FontSize="11" Foreground="#6C5CE7" TextWrapping="Wrap"/>
+                                <TextBlock Text="Anahtar Kavramlar:" FontSize="13" Foreground="#6B7280" FontWeight="SemiBold" Margin="0,0,0,4"/>
+                                <TextBlock Text="{Binding SelectedHistoryItem.KeyConcepts}" FontSize="13" Foreground="#2563EB" TextWrapping="Wrap"/>
                             </StackPanel>
                         </Border>
                     </materialDesign:Card>
 
-                    <materialDesign:Card Margin="0,0,0,15" Background="White" UniformCornerRadius="8" Padding="15">
+                    <!-- Actions Card -->
+                    <materialDesign:Card Margin="0,0,0,18" Background="#FFFFFF" UniformCornerRadius="12" Padding="20">
                         <StackPanel>
-                            <TextBlock Text="Akıllı Brifing" FontWeight="SemiBold" Foreground="#2D3436" Margin="0,0,0,12"/>
-                            <Button Command="{Binding GenerateBriefCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Background="#00B894" BorderBrush="{x:Null}">
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,16">
+                                <materialDesign:PackIcon Kind="LightningBoltOutline" Foreground="#374151" Width="20" Height="20" VerticalAlignment="Center"/>
+                                <TextBlock Text="Hızlı İşlemler" FontWeight="Bold" FontSize="15" Foreground="#111827" Margin="8,0,0,0" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            
+                            <Button Command="{Binding GenerateBriefCommand}" Style="{StaticResource MaterialDesignRaisedButton}" Background="#10B981" BorderBrush="{x:Null}"
+                                    materialDesign:ButtonAssist.CornerRadius="6" Height="40">
                                 <StackPanel Orientation="Horizontal">
-                                    <materialDesign:PackIcon Kind="FileChartOutline" Width="16" Height="16" Margin="0,0,8,0"/>
-                                    <TextBlock Text="Karar Brifingi Oluştur"/>
+                                    <materialDesign:PackIcon Kind="FileChartOutline" Width="20" Height="20" Margin="0,0,8,0" VerticalAlignment="Center"/>
+                                    <TextBlock Text="Karar Brifingi Oluştur" FontWeight="SemiBold" VerticalAlignment="Center"/>
                                 </StackPanel>
                             </Button>
-                            <CheckBox IsChecked="{Binding RequireCitations}" Margin="0,10,0,0" Content="Cevaplarda sayfa kanıtı iste"/>
+                            
+                            <CheckBox IsChecked="{Binding RequireCitations}" Margin="0,15,0,0" Content="Cevaplarda sayfa kanıtı iste"
+                                      Style="{StaticResource MaterialDesignCheckBox}" Foreground="#4B5563"/>
                         </StackPanel>
                     </materialDesign:Card>
 
-                    <TextBlock Text="GELİŞMİŞ ARAÇLAR" Foreground="#B2BEC3" FontSize="11" FontWeight="Bold" Margin="0,10,0,10"/>
-
-                    <Border Background="White" Padding="12" CornerRadius="8" Margin="0,0,0,10" BorderBrush="#EEE" BorderThickness="1">
+                    <!-- Web Search Section -->
+                    <Border Background="#FFFFFF" Padding="18" CornerRadius="12" Margin="0,0,0,18" BorderBrush="#E5E7EB" BorderThickness="1">
                         <StackPanel>
-                            <Grid>
+                            <Grid Margin="0,0,0,12">
                                 <StackPanel Orientation="Horizontal">
-                                    <materialDesign:PackIcon Kind="Web" Foreground="#0984E3" VerticalAlignment="Center" Margin="0,0,10,0"/>
-                                    <TextBlock Text="Web Arama" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                                    <materialDesign:PackIcon Kind="Web" Foreground="#0284C7" VerticalAlignment="Center" Width="20" Height="20" Margin="0,0,8,0"/>
+                                    <TextBlock Text="Web Arama" FontWeight="Bold" FontSize="15" Foreground="#111827" VerticalAlignment="Center"/>
                                 </StackPanel>
                                 <ToggleButton IsChecked="{Binding IsWebSearchEnabled}" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignSwitchToggleButton}"/>
                             </Grid>
 
-                            <TextBox Text="{Binding GoogleApiKey, UpdateSourceTrigger=PropertyChanged}"
-                                     materialDesign:HintAssist.Hint="Google Search API Key"
-                                     Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="0,10,0,0"/>
-                            <TextBox Text="{Binding GoogleSearchEngineId, UpdateSourceTrigger=PropertyChanged}"
-                                     materialDesign:HintAssist.Hint="Search Engine ID (cx)"
-                                     Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="0,8,0,0"/>
-                            <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
-                                <Button Command="{Binding SaveGoogleSettingsCommand}" Style="{StaticResource MaterialDesignOutlinedButton}" Padding="10,4">
-                                    <StackPanel Orientation="Horizontal">
-                                        <materialDesign:PackIcon Kind="ContentSaveOutline" Width="16" Height="16" Margin="0,0,6,0"/>
-                                        <TextBlock Text="Kaydet"/>
-                                    </StackPanel>
-                                </Button>
-                                <Button Command="{Binding TestWebSearchCommand}" Style="{StaticResource MaterialDesignOutlinedButton}" Padding="10,4" Margin="8,0,0,0">
-                                    <StackPanel Orientation="Horizontal">
-                                        <materialDesign:PackIcon Kind="Magnify" Width="16" Height="16" Margin="0,0,6,0"/>
-                                        <TextBlock Text="Test Et"/>
-                                    </StackPanel>
-                                </Button>
+                            <StackPanel Visibility="{Binding IsWebSearchEnabled, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                <TextBox Text="{Binding GoogleApiKey, UpdateSourceTrigger=PropertyChanged}"
+                                         materialDesign:HintAssist.Hint="Google Search API Key"
+                                         Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="0,5,0,0"
+                                         />
+                                <TextBox Text="{Binding GoogleSearchEngineId, UpdateSourceTrigger=PropertyChanged}"
+                                         materialDesign:HintAssist.Hint="Search Engine ID (cx)"
+                                         Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="0,12,0,0"
+                                         />
+                                         
+                                <StackPanel Orientation="Horizontal" Margin="0,12,0,0" HorizontalAlignment="Right">
+                                    <Button Command="{Binding SaveGoogleSettingsCommand}" Style="{StaticResource MaterialDesignFlatButton}" Foreground="#4F46E5" Padding="12,6">
+                                        <StackPanel Orientation="Horizontal">
+                                            <materialDesign:PackIcon Kind="ContentSaveOutline" Width="18" Height="18" Margin="0,0,6,0"/>
+                                            <TextBlock Text="Kaydet" FontWeight="SemiBold"/>
+                                        </StackPanel>
+                                    </Button>
+                                    <Button Command="{Binding TestWebSearchCommand}" Style="{StaticResource MaterialDesignFlatButton}" Foreground="#0284C7" Padding="12,6" Margin="8,0,0,0">
+                                        <StackPanel Orientation="Horizontal">
+                                            <materialDesign:PackIcon Kind="Magnify" Width="18" Height="18" Margin="0,0,6,0"/>
+                                            <TextBlock Text="Test Et" FontWeight="SemiBold"/>
+                                        </StackPanel>
+                                    </Button>
+                                </StackPanel>
+                                <TextBlock Text="{Binding WebSearchStatus}" FontSize="12" Foreground="#6B7280" TextWrapping="Wrap" Margin="0,8,0,0"/>
                             </StackPanel>
-                            <TextBlock Text="{Binding WebSearchStatus}" FontSize="11" Foreground="Gray" TextWrapping="Wrap" Margin="0,6,0,0"/>
                         </StackPanel>
                     </Border>
 
-                    <Button Command="{Binding ExportChatCommand}" Style="{StaticResource MaterialDesignOutlinedButton}" Margin="0,5,0,0" BorderBrush="#00B894" Foreground="#00B894">
+                    <Button Command="{Binding ExportChatCommand}" Style="{StaticResource MaterialDesignOutlinedButton}" 
+                            BorderBrush="#10B981" Foreground="#10B981" Height="40" materialDesign:ButtonAssist.CornerRadius="6">
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="FileExportOutline" Margin="0,0,8,0"/>
-                            <TextBlock Text="Sohbeti Raporla"/>
+                            <materialDesign:PackIcon Kind="FileExportOutline" Margin="0,0,8,0" Width="20" Height="20" VerticalAlignment="Center"/>
+                            <TextBlock Text="Sohbeti Raporla" FontWeight="SemiBold" VerticalAlignment="Center"/>
                         </StackPanel>
                     </Button>
                 </StackPanel>

@@ -12,11 +12,13 @@ namespace DocuMind.Infrastructure.Services
     {
         private readonly SettingsService _settingsService;
         private readonly HttpClient _httpClient;
+        private static readonly object _lockObject = new object();
 
         public WebSearchService(SettingsService settingsService)
         {
             _settingsService = settingsService;
-            _httpClient = new HttpClient { Timeout = TimeSpan.FromSeconds(20) };
+            // Use shared HTTP client to prevent socket exhaustion
+            _httpClient = AiServiceFactory.GetSharedHttpClient();
         }
 
         public bool IsActive()
@@ -47,7 +49,7 @@ namespace DocuMind.Infrastructure.Services
                 var content = await response.Content.ReadAsStringAsync();
                 if (!response.IsSuccessStatusCode)
                 {
-                    System.Diagnostics.Debug.WriteLine($"Web arama hatasi ({response.StatusCode}): {content}");
+                    System.Diagnostics.Debug.WriteLine($"Web arama hatası ({response.StatusCode}): {content}");
                     return results;
                 }
 
@@ -57,19 +59,27 @@ namespace DocuMind.Infrastructure.Services
 
                 foreach (var item in items.Take(5))
                 {
-                    string title = item["title"]?.ToString() ?? "Basliksiz";
-                    string snippet = item["snippet"]?.ToString() ?? string.Empty;
-                    string link = item["link"]?.ToString() ?? string.Empty;
-
-                    if (!string.IsNullOrWhiteSpace(snippet) || !string.IsNullOrWhiteSpace(link))
+                    try
                     {
-                        results.Add($"[WEB KAYNAGI]: {title}\n{snippet}\n(Link: {link})");
+                        string title = item["title"]?.ToString() ?? "Başlıksız";
+                        string snippet = item["snippet"]?.ToString() ?? string.Empty;
+                        string link = item["link"]?.ToString() ?? string.Empty;
+
+                        if (!string.IsNullOrWhiteSpace(snippet) || !string.IsNullOrWhiteSpace(link))
+                        {
+                            results.Add($"[WEB KAYNAGI]: {title}\n{snippet}\n(Link: {link})");
+                        }
+                    }
+                    catch (Exception itemEx)
+                    {
+                        System.Diagnostics.Debug.WriteLine($"Web search item parse error: {itemEx.Message}");
+                        continue; // Continue with next item if parsing fails
                     }
                 }
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Web arama baglanti hatasi: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Web arama bağlantı hatası: {ex.Message}");
             }
 
             return results;
